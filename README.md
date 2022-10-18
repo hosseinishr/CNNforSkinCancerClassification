@@ -49,7 +49,7 @@ Three models were developed:
 ### Base model
 The structure of the base model is shown in the figure below. ALL the models were compiled using the 'categorical_crossentropy' loss function, 'adam' optimiser, and 'accuracy' as the metric, and were trained with batch size of 32 through 30 epochs.
 
-<img src="/images/cnn-structure.png" width = 300>
+<img src="/images/cnn-structure.png" width = 400>
 
 The plots below show the performance of the Base model in terms of comparison of the train and validation accuracy and losses during the epochs.
 
@@ -57,7 +57,7 @@ The plots below show the performance of the Base model in terms of comparison of
 
 A sample Base model after 30 epochs has shown the metrics below, including test set accuracy:
 
-<img src="/images/model1-summary.png" width = 400>
+<img src="/images/model1-summary.png" width = 500>
 
 As can be seen, there is a huge gap between training accuracy and validation accuracy (printed above). This means the model is overfitted, which seems to be due to class imbalance and structure of the CNN. The class imbalance is further dealt with in 2 ways below in the 2 later models developed:
 - the functions within keras.layers are utilised in order to perform data augmentation.
@@ -72,7 +72,7 @@ The plots below show the performance of the Keras augmented model in terms of co
 
 A sample Keras augmented model after 30 epochs has shown the metrics below, including test set accuracy:
 
-<img src="/images/model2-summary.png" width = 400>
+<img src="/images/model2-summary.png" width = 500>
 
 As can be seen, the difference between training accuracy and validation accuracy is still high (as printed above). This means the model is still overfit due to this gap and the structure of the CNN.
 
@@ -87,7 +87,7 @@ The plots below show the performance of the Augmented model in terms of comparis
 
 A sample Augmented model after 30 epochs has shown the metrics below, including test set accuracy:
 
-<img src="/images/model3-summary.png" width = 400>
+<img src="/images/model3-summary.png" width = 500>
 
 As can be seen, the difference between training accuracy and validation accuracy has reduced to the value printed above. So this implies that the extent of overfit of the model is less than the previous 2 models. This means that using Augmentor to produce new images and adding them to the original train images has improved the performance of the CNN.
 
