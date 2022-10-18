@@ -4,7 +4,7 @@
 * [Problem Statement](#problem-statement)
 * [Step 1: Importing, and Understanding the Data](#step-1-importing-and-understanding-the-data)
 * [Step 2: Data Preparation](#step-2-data-preparation)
-* [Step 3: Model Building](#step-3-model-building)
+* [Step 3: Model Building and Evaluation](#step-3-model-building-and-evaluation)
 * [Models Summary](#models-summary)
 * [Next Steps](#next-steps)
 * [Acknowledgements](#acknowledgements)
@@ -40,7 +40,7 @@ The function train_val_data_prep is used to:
 
 x_test and y_test are also processed in a similar manner to abovementioned.
 
-## Step 3: Model Building
+## Step 3: Model Building and Evaluation
 Three models were developed:
 - **Base model**: which uses the original train images for training the CNN.
 - **Keras augmented model**: which uses keras.layers functions for data augmentation for training the CNN.
