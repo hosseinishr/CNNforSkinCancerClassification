@@ -77,7 +77,9 @@ A sample Keras augmented model after 30 epochs has shown the metrics below, incl
 As can be seen, the difference between training accuracy and validation accuracy is still high (as printed above). This means the model is still overfit due to this gap and the structure of the CNN.
 
 ### Augmented model
-The Augmentor library were used to create 500 additional new images from each class to be added to the original train set. This new set of training images were fed to the CNN with the same structure as the Base model.
+The Augmentor library were used to create 500 additional new images from each class to be added to the original train set. This new set of training images (with the number of images in each class shown below) were fed to the CNN with the same structure as the Base model.
+
+<img src="/images/freq2.png" width = 500>
 
 The plots below show the performance of the Augmented model in terms of comparison of the train and validation accuracy and losses during the epochs.
 
